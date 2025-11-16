@@ -21,7 +21,8 @@ app = FastAPI(
     description="API для управления ежедневником с возможностью создания, чтения, обновления и удаления записей",
     version="1.0.0",
     docs_url="/docs",
-    redoc_url="/redoc"
+    redoc_url="/redoc",
+    lifespan=lifespan
 )
 
 # Настройка CORS (для фронтенда)
